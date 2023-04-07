@@ -169,7 +169,8 @@ def find_likeminded_villagers(filename, villager_name):
             villager = line[2]
             break
 
-    print(villager)
+    data.close()
+    data = open(filename)
 
     if villager:
         print(villager)
@@ -186,4 +187,4 @@ def find_likeminded_villagers(filename, villager_name):
 # print(all_names_by_hobby('villagers.csv'))
 # print(all_data('villagers.csv'))
 # print(find_motto('villagers.csv', 'Audie'))
-print(find_likeminded_villagers('villagers.csv', 'Audie'))
+print(find_likeminded_villagers('villagers.csv', 'Cyrano'))
